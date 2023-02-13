@@ -1,0 +1,10 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  text-transform: "capitalize"
+}

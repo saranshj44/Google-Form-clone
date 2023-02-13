@@ -1,0 +1,123 @@
+.main_body {
+    /* height: 250px; */
+    /* background-color: #F1F3F4; */
+    width: 100%;
+    /* align-items: center; */
+    padding: 10px 13% 40px 13%;
+}
+
+.body_header {
+    /* width: 80%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.body_icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+}
+
+.body_icon>Button:hover .body_icon>Button:focus .body_icon>Button:focus-visible{
+    background-color: #F1F3F4;
+    outline: none !important;
+    border:  none !important;
+}
+
+.body_icon>Button {
+    cursor: pointer;
+    padding: 0px 10px;
+}
+
+.body_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.body_card{
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-right:12px ;
+    width:208px ;
+}
+.body_card:hover{
+    border: #7248b9 1px solid;
+}
+.img_card{
+    width: 208px;
+    height: 169px;
+    border-bottom: 1px solid #ccd0d4;
+}
+.img_card img{
+    width: 100%;
+}
+.img_content{
+    font-size: 14px;
+    text-align: left;
+    /* overflow: hidden; */
+    width: 100%;
+    padding: 15px 15px 15px 15px;
+}
+.img_content>p{
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    color: #414549;
+}
+.img_info{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.img_info .img_info_div{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.img_info_img{
+    width: 17px;
+    height: 17px;
+    margin-left: -5px;
+    background-color: #673AB7;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px;
+}
+.img_info_icon{
+    width: 10%;
+}
+.ic{
+    /* height: 80%; */
+    /* width: 80%; */
+    color: white;
+    font-weight: 900 !important;
+    font-size: 16px !important;
+}
+.img_info_p{
+    width: 80%;
+}
+.img_info_p>p{
+    font-weight: 400;
+    font-size: 12px;
+    color: #80868B;
+}
+.selectbutton{
+   /* background-color: #ffffff; */
+   /* border: 1px solid white !important; */
+   height: 20px;
+   background-color: white !important;
+}
