@@ -32,7 +32,7 @@ function MainBody() {
         setAge(event.target.value);
     };
     async function filenames(){
-        var request = await axios.get("http://localhost:8000/get_all_filenames");
+        var request = await axios.get("https://misty-fawn-shirt.cyclic.app/get_all_filenames");
         let filenames=request.data;
         setFiles(filenames);
         // alert(filenames)

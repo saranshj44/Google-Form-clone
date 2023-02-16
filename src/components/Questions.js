@@ -55,7 +55,7 @@ function Questions() {
         const [documentDescription, setDocDesc] = useState("Add Description");
         useEffect(()=>{
             async function data_adding(){
-                var request = await axios.get(`http://localhost:8000/data/${id}`);
+                var request = await axios.get(`https://misty-fawn-shirt.cyclic.app/data/${id}`);
                 var question_data=request.data.questions;
                 console.log(question_data);
                 var doc_name=request.data.document_name;
@@ -202,7 +202,7 @@ function Questions() {
         setQuestions(qs);
     }
     async function getdata(){
-        let finaldata = await axios.get(`http://localhost:8000/add_questions/${id}`)
+        let finaldata = await axios.get(`https://misty-fawn-shirt.cyclic.app/add_questions/${id}`)
         console.log(finaldata)    
         // setDocDesc(finaldata.data.doc_desc);
         dispatch({
@@ -233,7 +233,7 @@ function Questions() {
             type: actionTypes.SET_QUESTIONS,
             questions: questions
         })
-        axios.post(`http://localhost:8000/add_questions/${id}`,{
+        axios.post(`https://misty-fawn-shirt.cyclic.app/add_questions/${id}`,{
             "document_name":doc_name,
             "doc_desc":documentDescription,
             "questions":questions,

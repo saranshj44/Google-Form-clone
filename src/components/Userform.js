@@ -76,7 +76,7 @@ function Userform() {
             post_answer_data[ele.question] = ele.answer
         })
 
-        axios.post(`http://localhost:8000/student_response/${doc_name}`, {
+        axios.post(`https://misty-fawn-shirt.cyclic.app/student_response/${doc_name}`, {
             "column": quest,
             "answer_data": [post_answer_data]
         })

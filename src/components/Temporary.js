@@ -19,7 +19,7 @@ function Temporary() {
     var create_form_id=uuid();
     console.log(create_form_id);
     var questions_list=[{questionText:"Question",questionType:"radio",options:[{optionText:"Option 1"}],open:true,required:false}]
-      axios.post(`http://localhost:8000/add_questions/${create_form_id}`,{
+      axios.post(`https://misty-fawn-shirt.cyclic.app/add_questions/${create_form_id}`,{
         "document_name":"ultitled_form",
         "doc_desc":"Add Description",
         "questions":questions_list,
